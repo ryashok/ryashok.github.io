@@ -111,6 +111,19 @@ img {
   margin-bottom: 1rem;
 }
 
+.hero-lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.hero-utp {
+  margin-bottom: 1rem;
+}
+.hero-result {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
 .hero-text {
   color: var(--muted);
   margin-bottom: 1.5rem;
@@ -225,13 +238,32 @@ h2 {
   align-items: start;
 }
 
+.method-grid {
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .method-grid {
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+
+.method-grid > div:first-child {
+  min-width: 0;
+}
+
+.method-grid .eyebrow {
+  text-align: left;
+}
+
 .method-list {
   list-style: none;
   padding: 0;
-  margin: 2rem 0 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: left;
 }
 
 .method-highlight {
