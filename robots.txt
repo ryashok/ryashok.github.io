@@ -1,0 +1,47 @@
+# robots.txt для https://ryashok.github.io/
+# Сайт: статический HTML, психолог Владимир Ряхин. GitHub Pages.
+# Цель: индексация страниц контента, закрытие от индексации ресурсов и служебных путей.
+# Кодировка: UTF-8.
+
+# --- Все поисковые роботы (Google, Yandex и др.) ---
+User-agent: *
+
+# Разрешить индексацию главной и всех страниц по умолчанию.
+# Конкретные страницы: / (главная), /index.html, /privacy.html, /offer.html.
+# Услуги и контакты — якоря на главной (#services, #contact), не отдельные URL.
+Allow: /
+
+# Запретить каталоги с ресурсами (JS, CSS, изображения) — не контент для поиска.
+Disallow: /assets/
+
+# Служебные/приватные пути (на будущее; сейчас могут не существовать).
+Disallow: /admin/
+Disallow: /private/
+
+# Дополнительные префиксы на случай появления отдельных папок js/css/images в корне.
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+
+# Ссылка на карту сайта (создать sitemap.xml в корне репозитория).
+Sitemap: https://ryashok.github.io/sitemap.xml
+
+# --- Явные правила для Google (опционально, для ясности) ---
+User-agent: Googlebot
+Allow: /
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+
+# --- Явные правила для Яндекса (опционально, для ясности) ---
+User-agent: Yandex
+Allow: /
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
