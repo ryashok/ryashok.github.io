@@ -32,6 +32,22 @@ a:focus {
   color: var(--primary);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.btn:focus-visible,
+.slider-btn:focus-visible,
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -56,6 +72,25 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-photo {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+.header-photo img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 
 .logo {
@@ -111,11 +146,15 @@ img {
   margin-bottom: 1rem;
 }
 
-.hero-cta-main {
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
 
-.hero-cta-main .btn {
+.hero-cta-main.btn,
+.hero-cta .hero-cta-main {
   font-size: 1.05rem;
   padding: 0.9rem 1.75rem;
 }
@@ -123,26 +162,9 @@ img {
 .hero-lead {
   font-size: 1.1rem;
   color: var(--muted);
-  margin-bottom: 0.75rem;
-}
-.hero-utp {
-  margin-bottom: 1rem;
-}
-.hero-result {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--muted);
-}
-.hero-text {
-  color: var(--muted);
   margin-bottom: 1.5rem;
 }
 
-.hero-cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 1.25rem;
-}
 
 .social-cta {
   margin-top: 1.5rem;
@@ -289,6 +311,31 @@ h2 {
   margin-bottom: 0.35rem;
 }
 
+.testimonial-quotes {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial-quote {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+.testimonial-quote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .testimonial-slider {
   position: relative;
   margin-top: 2rem;
@@ -411,6 +458,16 @@ h2 {
 .faq-item p {
   margin: 0;
   color: var(--muted);
+}
+
+.contact-primary {
+  margin-bottom: 1.5rem;
+}
+
+.form-alt-hint {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
 }
 
 .form-hint {
