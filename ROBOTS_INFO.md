@@ -8,7 +8,8 @@
 | **User-agent: Googlebot** | Отдельный блок для Google (при необходимости особых правил). |
 | **User-agent: Yandex** | Отдельный блок для Яндекса. |
 | **Allow: /** | Разрешить индексацию всего сайта по умолчанию; то, что не попадает под Disallow, считается разрешённым. |
-| **Disallow: /assets/** | Не индексировать папку assets (CSS, JS, изображения) — экономия краул-бюджета и отсутствие дублей по медиа. |
+| **Allow: /assets/img/** | Разрешить индексацию изображений (фото, отзывы) для поиска по картинкам. |
+| **Disallow: /assets/** | Не индексировать JS и CSS — экономия краул-бюджета. |
 | **Disallow: /admin/** | Закрыть будущую админку или служебные страницы. |
 | **Disallow: /private/** | Закрыть приватные/черновые страницы. |
 | **Disallow: /js/**, **/css/**, **/images/** | На случай появления таких папок в корне — не индексировать. |
@@ -28,7 +29,7 @@
 | `https://ryashok.github.io/offer.html` | ✅ Разрешено | То же |
 | `https://ryashok.github.io/assets/css/styles.css` | ❌ Запрещено | Disallow: /assets/ |
 | `https://ryashok.github.io/assets/js/main.js` | ❌ Запрещено | Disallow: /assets/ |
-| `https://ryashok.github.io/assets/img/photo.png` | ❌ Запрещено | Disallow: /assets/ |
+| `https://ryashok.github.io/assets/img/photo.png` | ✅ Разрешено | Allow: /assets/img/ |
 | `https://ryashok.github.io/admin/` | ❌ Запрещено | Disallow: /admin/ |
 | `https://ryashok.github.io/private/` | ❌ Запрещено | Disallow: /private/ |
 | `https://ryashok.github.io/favicon/favicon.ico` | ✅ Разрешено | /favicon/ не в списке Disallow (при желании можно добавить Disallow: /favicon/) |

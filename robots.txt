@@ -11,7 +11,9 @@ User-agent: *
 # Услуги и контакты — якоря на главной (#services, #contact), не отдельные URL.
 Allow: /
 
-# Запретить каталоги с ресурсами (JS, CSS, изображения) — не контент для поиска.
+# Разрешить индексацию изображений (фото, отзывы) для поиска по картинкам.
+Allow: /assets/img/
+# Запретить JS и CSS — не контент для поиска.
 Disallow: /assets/
 
 # Служебные/приватные пути (на будущее; сейчас могут не существовать).
@@ -29,6 +31,7 @@ Sitemap: https://ryashok.github.io/sitemap.xml
 # --- Явные правила для Google (опционально, для ясности) ---
 User-agent: Googlebot
 Allow: /
+Allow: /assets/img/
 Disallow: /assets/
 Disallow: /admin/
 Disallow: /private/
@@ -39,6 +42,7 @@ Disallow: /images/
 # --- Явные правила для Яндекса (опционально, для ясности) ---
 User-agent: Yandex
 Allow: /
+Allow: /assets/img/
 Disallow: /assets/
 Disallow: /admin/
 Disallow: /private/
