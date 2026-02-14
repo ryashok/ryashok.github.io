@@ -1,0 +1,219 @@
+/* Клип-лендинг: один экран = один шаг, full-viewport frame */
+
+.clip-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.clip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  flex-shrink: 0;
+  background: rgba(246, 245, 241, 0.95);
+  border-bottom: 1px solid var(--border);
+}
+
+.clip-header .clip-logo {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.clip-header .clip-logo a {
+  color: var(--text);
+}
+
+.clip-header .clip-logo a:hover {
+  color: var(--primary);
+}
+
+.clip-steps {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.clip-steps span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.2s;
+}
+
+.clip-steps span.is-active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+.clip-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem 3rem;
+  text-align: center;
+}
+
+.clip-content {
+  max-width: 520px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.clip-content h1 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+
+.clip-content .clip-lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.clip-content p {
+  margin: 0 0 1rem;
+}
+
+.clip-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+.clip-content ul li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.clip-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.clip-photo {
+  margin: 0 auto 1.5rem;
+  max-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(23, 32, 41, 0.12);
+}
+
+.clip-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.clip-cta {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clip-cta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.clip-cta .btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.clip-cta .btn.primary:hover {
+  background: var(--primary-dark);
+}
+
+.clip-cta .btn.ghost {
+  background: transparent;
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.clip-cta .btn.ghost:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+.clip-back {
+  font-size: 0.875rem;
+  color: var(--muted);
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.clip-back a:hover {
+  color: var(--primary);
+}
+
+/* Step 5: contact layout */
+.clip-contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.clip-contact-actions .btn.social {
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  min-width: 220px;
+  justify-content: center;
+}
+
+.clip-contact-actions .btn.social.tg {
+  background: #24a1de;
+}
+
+.clip-contact-actions .btn.social.email {
+  background: #4f46e5;
+}
+
+.clip-contact-actions .btn.social:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 480px) {
+  .clip-frame {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+  .clip-content h1 {
+    font-size: 1.35rem;
+  }
+  .clip-cta .btn {
+    min-height: 48px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
