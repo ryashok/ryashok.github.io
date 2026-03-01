@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест: какой страх вам мешает? — Владимир Ряхин</title>
+    <meta name="description" content="Короткий тест из 5 вопросов: узнайте, какой страх сильнее всего влияет на ваши решения, и получите персональный вывод." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ryashok.github.io/articles/test-strah.html" />
+    <meta property="og:title" content="Тест: какой страх вам мешает?" />
+    <meta property="og:description" content="5 вопросов — персональный результат и рекомендация." />
+    <meta property="og:image" content="https://ryashok.github.io/assets/img/article-prirodastraha.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="canonical" href="https://ryashok.github.io/articles/test-strah.html" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-brand">
+          <a href="../index.html" class="header-photo" aria-label="На главную"><img src="../assets/img/photo.png" alt="" width="48" height="48" /></a>
+          <div class="logo">Владимир Ряхин</div>
+        </div>
+        <nav class="main-nav">
+          <a href="../index.html#services">Услуги</a>
+          <a href="../index.html#method">Метод</a>
+          <a href="../index.html#testimonials">Отзывы</a>
+          <a href="../index.html#contact">Запись</a>
+          <a href="index.html">Статьи</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section test-section">
+        <div class="container test-container">
+          <p class="eyebrow">Тест</p>
+          <h2>Какой страх вам мешает?</h2>
+          <p class="lead">Ответьте на 5 коротких вопросов — в конце вы получите персональный вывод и рекомендацию.</p>
+
+          <div id="test-root">
+            <div id="test-step" class="test-step">
+              <p class="test-question" id="test-question"></p>
+              <div class="test-options" id="test-options"></div>
+              <div class="test-progress">
+                <span id="test-counter">1</span> из 5
+              </div>
+            </div>
+            <div id="test-result" class="test-result" hidden>
+              <h3 id="result-title" class="result-title"></h3>
+              <p id="result-text" class="result-text"></p>
+              <div class="result-cta">
+                <p>Одна консультация поможет увидеть ваш запрос точечно и дать инструменты, которые можно использовать сразу.</p>
+                <a href="https://t.me/Ryashok?text=Здравствуйте%2C%20прошёл%20тест%20на%20сайте.%20Хочу%20записаться%20на%20консультацию" class="btn primary" target="_blank" rel="noopener noreferrer">Записаться на консультацию в Telegram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Владимир Ряхин. Все права защищены.</p>
+        <div class="footer-links">
+          <a class="btn social vk" href="https://vk.com/ryakhin" target="_blank" rel="noreferrer">VK</a>
+          <a class="btn social tg" href="https://t.me/Ryashok" target="_blank" rel="noreferrer">Telegram</a>
+          <a class="btn ghost" href="../privacy.html">Политика конфиденциальности</a>
+          <a class="btn ghost" href="../offer.html">Договор оферты</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+(function() {
+  var types = { failure: 0, judgment: 0, control: 0, future: 0 };
+  var questions = [
+    {
+      text: 'Когда вы думаете о завтрашнем дне, что чувствуете чаще всего?',
+      options: [
+        { text: 'Тревогу, что что-то пойдёт не так', type: 'future' },
+        { text: 'Раздражение, если не могу всё спланировать', type: 'control' },
+        { text: 'Мысли «а что подумают другие?»', type: 'judgment' },
+        { text: 'Волнение: справлюсь ли я', type: 'failure' }
+      ]
+    },
+    {
+      text: 'В ситуации неопределённости вы скорее…',
+      options: [
+        { text: 'Откладываю решение', type: 'future' },
+        { text: 'Ищу информацию и составляю план', type: 'control' },
+        { text: 'Спрашиваю совета у близких или коллег', type: 'judgment' },
+        { text: 'Боюсь ошибиться и долго выбираю', type: 'failure' }
+      ]
+    },
+    {
+      text: 'Что для вас болезненнее?',
+      options: [
+        { text: 'Критика или неодобрение окружающих', type: 'judgment' },
+        { text: 'Потеря контроля над ситуацией', type: 'control' },
+        { text: 'Провал или ошибка на виду у всех', type: 'failure' },
+        { text: 'Неизвестность, когда ничего не ясно', type: 'future' }
+      ]
+    },
+    {
+      text: 'В спорах о деньгах или важных решениях вы чаще…',
+      options: [
+        { text: 'Переживаю, что сделаю «не так»', type: 'failure' },
+        { text: 'Сравниваю себя с другими', type: 'judgment' },
+        { text: 'Коплю «на чёрный день» или держу всё в руках', type: 'control' },
+        { text: 'Думаю «завтра разберусь» и откладываю', type: 'future' }
+      ]
+    },
+    {
+      text: 'Когда страх или тревога накрывают, вы обычно…',
+      options: [
+        { text: 'Пытаюсь взять себя в руки и всё продумать', type: 'control' },
+        { text: 'Ухожу в себя, не хочу показывать слабость', type: 'judgment' },
+        { text: 'Парализует, трудно действовать', type: 'future' },
+        { text: 'Ругаю себя за «слабость»', type: 'failure' }
+      ]
+    }
+  ];
+  var results = {
+    failure: {
+      title: 'Страх неудачи',
+      text: 'Вы требовательны к себе и боитесь ошибиться. Часто это останавливает ещё до первого шага — зато «безопасно». Хорошая новость: с этим можно мягко работать. На консультации мы можем увидеть, где страх реально защищает, а где просто мешает двигаться вперёд, и подобрать ваши инструменты.'
+    },
+    judgment: {
+      title: 'Страх оценки',
+      text: 'Вам важно, что подумают другие. Из-за этого силы уходят на «соответствовать» или не ударить в грязь лицом. Работа с психологом помогает опереться на своё мнение и снизить зависимость от чужих оценок — чтобы решения были вашими.'
+    },
+    control: {
+      title: 'Страх потери контроля',
+      text: 'Вам нужна ясность и ощущение, что ситуация в руках. Когда контроль под угрозой, тревога растёт. Можно научиться отличать здоровый контроль от того, что выматывает, и снижать внутреннее напряжение.'
+    },
+    future: {
+      title: 'Страх будущего',
+      text: 'Неопределённость завтрашнего дня тревожит сильнее всего. Мозг дорисовывает худшие сценарии. На консультации можно точечно проработать этот сценарий и найти опору, чтобы завтра не казалось угрожающим.'
+    }
+  };
+
+  var stepEl = document.getElementById('test-step');
+  var resultEl = document.getElementById('test-result');
+  var questionEl = document.getElementById('test-question');
+  var optionsEl = document.getElementById('test-options');
+  var counterEl = document.getElementById('test-counter');
+  var resultTitleEl = document.getElementById('result-title');
+  var resultTextEl = document.getElementById('result-text');
+
+  var currentQ = 0;
+
+  function renderQuestion() {
+    if (currentQ >= questions.length) {
+      showResult();
+      return;
+    }
+    var q = questions[currentQ];
+    questionEl.textContent = q.text;
+    optionsEl.innerHTML = '';
+    q.options.forEach(function(opt) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'btn test-option';
+      btn.textContent = opt.text;
+      btn.addEventListener('click', function() {
+        types[opt.type]++;
+        currentQ++;
+        counterEl.textContent = currentQ + 1;
+        renderQuestion();
+      });
+      optionsEl.appendChild(btn);
+    });
+  }
+
+  function showResult() {
+    var max = 'failure';
+    if (types.judgment > types[max]) max = 'judgment';
+    if (types.control > types[max]) max = 'control';
+    if (types.future > types[max]) max = 'future';
+    var r = results[max];
+    resultTitleEl.textContent = r.title;
+    resultTextEl.textContent = r.text;
+    stepEl.hidden = true;
+    resultEl.hidden = false;
+  }
+
+  renderQuestion();
+})();
+    </script>
+  </body>
+</html>
