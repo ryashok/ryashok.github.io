@@ -104,6 +104,15 @@ img {
   letter-spacing: 0.08em;
 }
 
+.header-brand .logo-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-brand .logo-link:hover {
+  text-decoration: underline;
+}
+
 .main-nav {
   display: flex;
   gap: 1.5rem;
