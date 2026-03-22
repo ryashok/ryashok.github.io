@@ -30,7 +30,7 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="canonical" href="https://ryashok.github.io/" />
   </head>
@@ -39,7 +39,10 @@
       <div class="container">
         <div class="header-brand">
           <a href="index.html" class="header-photo" aria-label="На главную"><img src="assets/img/photo.png" alt="" width="48" height="48" /></a>
-          <div class="logo"><a href="index.html" class="logo-link logo-name">Владимир Ряхин</a> — перезагрузка жизни без травм.<br>Бережная психология: мягко, точечно, с результатом.</div>
+          <div class="header-brand-text">
+            <a href="index.html" class="logo-link logo-name">Владимир Ряхин</a>
+            <span class="header-tagline">Перезагрузка жизни без травм · бережная психология</span>
+          </div>
         </div>
         <nav class="main-nav">
           <a href="#services">Услуги</a>
@@ -49,7 +52,8 @@
           <a href="articles/">Статьи</a>
           <a href="videos/">Видео</a>
         </nav>
-        <button class="nav-toggle" aria-label="Открыть меню">
+        <a class="btn primary header-cta" href="https://t.me/Ryashok?text=Здравствуйте%2C%20хочу%20записаться%20на%20консультацию" target="_blank" rel="noreferrer">Записаться</a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню">
           <span></span>
           <span></span>
           <span></span>
@@ -61,39 +65,75 @@
       <section class="hero" id="home">
         <div class="container">
           <div class="hero-content">
-            <h1>Устали от внутренней пустоты? Пора собрать себя заново</h1>
-            <p class="hero-lead">Авторский метод психологической помощи. Помогаю пережить кризис и вернуть вкус к жизни — мягко и с результатом. Многие отмечают облегчение уже после первой встречи.</p>
+            <span class="hero-eyebrow">Бережная психология · ментально-образная терапия</span>
+            <h1>Устали от внутренней пустоты? Пора <em>собрать себя</em> заново</h1>
+            <p class="hero-lead">
+              Авторский метод психологической помощи. Помогаю пережить кризис и вернуть вкус к жизни — мягко и с результатом. Многие отмечают облегчение уже после первой встречи.
+            </p>
             <div class="hero-cta">
               <a class="btn primary hero-cta-main" href="https://t.me/Ryashok?text=Здравствуйте%2C%20хочу%20записаться%20на%20консультацию" target="_blank" rel="noreferrer">Записаться в Telegram</a>
               <a class="btn secondary" href="clip/step1.html">Узнать за 1 минуту</a>
             </div>
           </div>
-          <div class="hero-photo">
-            <img src="assets/img/photo.png" alt="Владимир Ряхин — психолог, ментально-образная терапия" />
+          <div class="hero-photo-wrap">
+            <div class="hero-photo">
+              <img src="assets/img/photo.png" alt="Владимир Ряхин — психолог, ментально-образная терапия" />
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="pause-section" aria-labelledby="pause-heading">
+        <div class="pause-inner">
+          <div class="pause-icon" aria-hidden="true">✦</div>
+          <blockquote id="pause-heading">
+            «Рост — не прямая линия, а серия тихих расширений. В бережном пространстве мы находим нарратив, который исцеляет.»
+          </blockquote>
+          <div class="pause-divider" aria-hidden="true"></div>
         </div>
       </section>
 
       <section class="section" id="services">
         <div class="container">
-          <p class="eyebrow">Услуги</p>
-          <h2>Как я могу помочь</h2>
-          <div class="cards-grid">
-            <article class="card">
+          <div class="services-head">
+            <div>
+              <p class="eyebrow">Услуги</p>
+              <h2>Как я могу помочь</h2>
+              <p class="lead">Фокус на вашем запросе, устойчивых решениях и внутреннем ресурсе — в формате, который подстраивается под вашу жизнь.</p>
+            </div>
+            <a class="btn secondary" href="#contact">Обсудить запрос</a>
+          </div>
+
+          <div class="services-bento">
+            <article class="bento-card bento-card--wide">
               <h3>Индивидуальная консультация</h3>
               <p>
-                60 минут личной работы, где мы разбираем текущий запрос, ищем устойчивые решения и поддерживаем ваш внутренний ресурс.
-              </p>
-              <p>
-                Онлайн-консультации проходят по безопасной видеосвязи и включают работу на всех уровнях: подсознание, сознание и управление мыслями. Отдельное внимание уделяем
-                чувственной сфере, мягко снимая страхи, обиды, чувство вины и другие тяжёлые эмоции.
+                60 минут личной работы: разбираем текущий запрос, ищем устойчивые решения и поддерживаем ваш внутренний ресурс. Онлайн по безопасной видеосвязи — работа на уровнях подсознания, сознания и управления мыслями; мягко снимаем страхи, обиды, вину и другие тяжёлые эмоции.
               </p>
               <ul>
                 <li>Диагностика запроса</li>
                 <li>Практические техники</li>
                 <li>Поддержка между встречами</li>
               </ul>
-              <p class="card-price">7 500 ₽</p>
+              <div class="chip-row">
+                <span class="chip">Онлайн</span>
+                <span class="chip">60 минут</span>
+                <span class="chip">Яндекс Телемост</span>
+              </div>
+              <p class="card-price">7 500 ₽ <span>/ сессия</span></p>
+            </article>
+
+            <article class="bento-card bento-card--side">
+              <h3>Метод в двух словах</h3>
+              <p>Ментально-образная терапия — мягкий диалог с подсознанием через образы. Мы не «ковыряем раны», а трансформируем опыт в ресурс.</p>
+              <p style="margin-top: 1.5rem;"><a class="btn primary" href="#method">Подробнее о методе</a></p>
+            </article>
+
+            <article class="bento-card bento-card--full">
+              <h3>Кому подойдёт</h3>
+              <p style="margin: 0; max-width: 48rem;">
+                Если внутри — вопросы без ответов; если устали от тревоги, обид и ощущения, что живёте не свою жизнь; если хочется покоя, но непонятно, как его найти — вы по адресу.
+              </p>
             </article>
           </div>
         </div>
@@ -108,35 +148,37 @@
               Ментально-образная терапия — это мягкий диалог с вашим подсознанием через образы. Мы не воюем с проблемами, мы трансформируем их в ресурс. Без слёз, без давления, без вскрытия старых ран.
             </p>
             <p>Владимир Ряхин — практикующий психолог, автор метода. Работаю через образы и метафоры, а не жёсткие техники. Опора на здоровые части личности, а не «ковыряние ран».</p>
-            <p class="eyebrow" style="margin-top:1.5rem;">Кому подойдёт</p>
-            <p>Если внутри — вопросы без ответов. Если устали от тревоги, обид и чувства, что живёте не свою жизнь. Если хочется покоя, но непонятно, как его найти — вы по адресу.</p>
+            <p class="eyebrow" style="margin-top: 1.75rem;">Чем отличаюсь</p>
             <div class="method-highlight">
-              <p><strong>Чем отличаюсь:</strong></p>
-              <ul style="margin:0.5rem 0 0 1rem;">
+              <ul style="margin: 0; padding-left: 1.1rem;">
                 <li>Не «ковыряю раны» — работаю через здоровые части личности</li>
                 <li>Мягкий метод — через образы и метафоры, без жёстких техник</li>
                 <li>Быстрый ресурс — многие отмечают облегчение уже после 1-й сессии</li>
                 <li>Авторская методика — то, чего нет у других психологов</li>
               </ul>
             </div>
-            <p class="eyebrow" style="margin-top:1.5rem;">Результат</p>
-            <p>После наших встреч клиенты говорят: «У меня словно крылья выросли», «Я вспомнила, кто я», «Стало легко дышать». Это не магия. Это правильно настроенная психика.</p>
+            <p class="eyebrow" style="margin-top: 1.75rem;">Результат</p>
+            <p>После наших встреч клиенты говорят: «У меня словно крылья выросли», «Я вспомнила, кто я», «Стало легко дышать». Это не магия — это правильно настроенная психика.</p>
           </div>
           <ul class="method-list">
             <li>
-              <strong>Лёгкость на душе</strong> — многие замечают уже после первой встречи
+              <strong>Лёгкость на душе</strong>
+              многие замечают уже после первой встречи
             </li>
             <li>
-              <strong>Ясность</strong> — куда двигаться дальше
+              <strong>Ясность</strong>
+              куда двигаться дальше
             </li>
             <li>
-              <strong>Освобождение</strong> от старых обид
+              <strong>Освобождение</strong>
+              от старых обид
             </li>
             <li>
               <strong>Энергия и хорошее настроение</strong>
             </li>
             <li>
-              <strong>Новый я</strong> — целый и сильный
+              <strong>Новый я</strong>
+              целый и сильный
             </li>
           </ul>
         </div>
@@ -154,51 +196,39 @@
           </div>
 
           <div class="testimonial-slider" aria-live="polite">
-            <button class="slider-btn prev" aria-label="Предыдущий отзыв">
-              ←
-            </button>
+            <button class="slider-btn prev" type="button" aria-label="Предыдущий отзыв">←</button>
             <div class="slider-window">
               <div class="slider-track">
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-1.jpg" alt="Отзыв Марии" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-2.jpg" alt="Отзыв Ирины" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-3.jpg" alt="Отзыв Олега" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-4.jpg" alt="Отзыв клиента 4" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-5.jpg" alt="Отзыв клиента 5" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-6.jpg" alt="Отзыв клиента 6" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-7.png" alt="Отзыв клиента 7" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-8.png" alt="Отзыв клиента 8" loading="lazy" />
                 </article>
-
                 <article class="testimonial-slide">
                   <img src="assets/img/testimonial-9.png" alt="Отзыв клиента 9" loading="lazy" />
                 </article>
               </div>
             </div>
-            <button class="slider-btn next" aria-label="Следующий отзыв">
-              →
-            </button>
+            <button class="slider-btn next" type="button" aria-label="Следующий отзыв">→</button>
           </div>
         </div>
       </section>
@@ -224,6 +254,19 @@
               <h3>Работаете ли с детьми?</h3>
               <p>Ребёнок транслирует ваши проблемы в семье и ваше внутреннее состояние. Поэтому на этом этапе работать с ним напрямую не имеет смысла — сначала работаем с родителями.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="cta-banner__inner">
+            <h2 id="cta-heading">Готовы сделать первый <em style="font-style: italic;">бережный</em> шаг?</h2>
+            <p>Консультация — это пространство без давления: можно просто познакомиться и понять, подходим ли мы друг другу.</p>
+            <div class="cta-banner__actions">
+              <a class="btn primary" href="https://t.me/Ryashok?text=Здравствуйте%2C%20хочу%20записаться%20на%20консультацию" target="_blank" rel="noreferrer">Написать в Telegram</a>
+              <a class="btn secondary" href="#contact">Форма записи</a>
+            </div>
           </div>
         </div>
       </section>
@@ -271,15 +314,40 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-links">
-          <a class="btn social vk" href="https://vk.com/ryakhin" target="_blank" rel="noreferrer">VK</a>
-          <a class="btn social tg" href="https://t.me/Ryashok" target="_blank" rel="noreferrer">Telegram</a>
-          <a class="btn social tg-channel" href="https://t.me/ryashokhipnoterapevt" target="_blank" rel="noreferrer">Канал Спокойствие</a>
-          <a class="btn ghost" href="privacy.html">Политика конфиденциальности</a>
-          <a class="btn ghost" href="offer.html">Договор оферты</a>
-          <a href="https://webmaster.yandex.ru/siteinfo/?site=https://ryashok.github.io" target="_blank" rel="noreferrer" title="Яндекс.Вебмастер" class="footer-iks"><img width="88" height="31" alt="Индекс качества сайта" src="https://yandex.ru/cycounter?https://ryashok.github.io&amp;theme=light&amp;lang=ru" style="border:0;border-radius:8px;vertical-align:middle;" /></a>
+        <div>
+          <div class="footer-brand">Владимир Ряхин</div>
+          <p class="footer-about">Перезагрузка жизни без травм. Бережная психология и ментально-образная терапия — мягко, точечно, с результатом.</p>
         </div>
-        <p class="footer-copyright">© 2025 Владимир Ряхин. Все права защищены.</p>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#method">Метод</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#contact">Запись</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Связь и материалы</h4>
+          <ul>
+            <li><a href="articles/">Статьи</a></li>
+            <li><a href="videos/">Видео</a></li>
+            <li><a href="https://vk.com/ryakhin" target="_blank" rel="noreferrer">ВКонтакте</a></li>
+            <li><a href="https://t.me/Ryashok" target="_blank" rel="noreferrer">Telegram</a></li>
+            <li><a href="https://t.me/ryashokhipnoterapevt" target="_blank" rel="noreferrer">Канал «Спокойствие»</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2025 Владимир Ряхин. Все права защищены.</p>
+          <div class="footer-links">
+            <a class="btn social vk" href="https://vk.com/ryakhin" target="_blank" rel="noreferrer">VK</a>
+            <a class="btn social tg" href="https://t.me/Ryashok" target="_blank" rel="noreferrer">Telegram</a>
+            <a class="btn social tg-channel" href="https://t.me/ryashokhipnoterapevt" target="_blank" rel="noreferrer">Канал</a>
+            <a class="btn ghost" href="privacy.html">Политика конфиденциальности</a>
+            <a class="btn ghost" href="offer.html">Договор оферты</a>
+            <a href="https://webmaster.yandex.ru/siteinfo/?site=https://ryashok.github.io" target="_blank" rel="noreferrer" title="Яндекс.Вебмастер" class="footer-iks"><img width="88" height="31" alt="Индекс качества сайта" src="https://yandex.ru/cycounter?https://ryashok.github.io&amp;theme=light&amp;lang=ru" style="border:0;border-radius:8px;vertical-align:middle;" /></a>
+          </div>
+        </div>
       </div>
     </footer>
 

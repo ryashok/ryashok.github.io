@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Empathetic Editorial | Blog &amp; Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#eae8e0",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary": "#556959",
+              "on-primary-fixed": "#2f4434",
+              "on-secondary-container": "#435647",
+              "on-surface-variant": "#65655e",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#d2e8d3",
+              "on-primary-fixed-variant": "#4b614f",
+              "inverse-primary": "#e4fde6",
+              "primary-fixed": "#d1e9d3",
+              "inverse-surface": "#0e0e0c",
+              "outline": "#81817a",
+              "on-surface": "#383833",
+              "on-secondary-fixed-variant": "#4d6050",
+              "surface-bright": "#fffcf7",
+              "on-tertiary-fixed-variant": "#5b6836",
+              "tertiary-dim": "#515d2d",
+              "surface-container-low": "#fcf9f3",
+              "primary": "#546a58",
+              "tertiary-container": "#e6f5b6",
+              "error-dim": "#67040d",
+              "surface-container": "#f6f3ed",
+              "tertiary": "#5d6938",
+              "inverse-on-surface": "#9e9d98",
+              "on-error-container": "#6e0a12",
+              "on-tertiary-container": "#515d2d",
+              "tertiary-fixed-dim": "#d8e6a9",
+              "outline-variant": "#bbb9b2",
+              "background": "#fffcf7",
+              "on-secondary-fixed": "#314435",
+              "on-primary-container": "#425746",
+              "tertiary-fixed": "#e6f5b6",
+              "on-background": "#383833",
+              "surface-variant": "#eae8e0",
+              "error-container": "#fa746f",
+              "surface-tint": "#546a58",
+              "surface-container-high": "#f0eee6",
+              "secondary-fixed-dim": "#c4dac6",
+              "primary-dim": "#485d4c",
+              "error": "#af3d3b",
+              "primary-container": "#d1e9d3",
+              "surface-dim": "#e4e3da",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "secondary-dim": "#495d4d",
+              "secondary-container": "#d2e8d3",
+              "surface": "#fffcf7",
+              "on-tertiary-fixed": "#3f4b1d",
+              "primary-fixed-dim": "#c3dbc5"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #fffcf7;
+        color: #383833;
+      }
+      .serif-display {
+        font-family: 'Noto Serif', serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background-color: rgba(255, 252, 247, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf7]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(56,56,51,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="font-serif italic text-2xl text-[#383833] dark:text-[#f6f3ed]">
+                The Empathetic Editorial
+            </div>
+<div class="hidden md:flex items-center gap-12 font-serif text-lg tracking-tight">
+<a class="text-[#383833] dark:text-[#eae8e0] opacity-80 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">About</a>
+<a class="text-[#383833] dark:text-[#eae8e0] opacity-80 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Services</a>
+<a class="text-[#546a58] dark:text-[#8CA38F] font-semibold border-b-2 border-[#d1e9d3] pb-1 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-body font-medium hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                Book a Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Header -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h1 class="serif-display text-display-lg text-5xl md:text-6xl lg:text-7xl leading-tight mb-8 text-on-surface">
+                        Reflections on the <span class="italic">Modern Mind.</span>
+</h1>
+<p class="text-body text-xl text-on-surface-variant max-w-lg leading-relaxed mb-12">
+                        A curated sanctuary of psychological insights, mindfulness practices, and empathetic perspectives to guide your journey toward resilience.
+                    </p>
+<!-- Search Bar "Sunken" Style -->
+<div class="relative max-w-md">
+<div class="bg-surface-container-high rounded-lg p-4 flex items-center gap-4 transition-all focus-within:bg-primary-container focus-within:ring-1 focus-within:ring-primary">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 w-full font-body text-on-surface placeholder:text-outline-variant" placeholder="Explore topics..." type="text"/>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="Close up of a tranquil forest stream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtvxqyB6GEdZyH9kX_cf_OnaegTclZ1VoaqcCRarCw_N5WLFFlpZxxlrIgOZh-zNsFULm98K5IeTZxxHfzQbCtGukzbfwm2cFWEzLc7BBtgqvlWGy3xO_ZqzRMZfaXw4lEv2mYAcXYF9Zge4H-jGw94aYMwV_yhDUQZm_tr9l7gXr407wUJnWiXvzcppZ5KB4J3VrIGibLQBCB1uE6eystpBKpErl2HMeLpT2KXmOdu0PfCfQ1KPFhsRLbnVJdDSjiiVMfkrmF03CT"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-[0px_20px_40px_rgba(56,56,51,0.05)] max-w-xs hidden md:block">
+<p class="serif-display italic text-lg text-primary leading-snug">
+                            "The wound is the place where the Light enters you."
+                        </p>
+<p class="text-label text-sm text-outline mt-2 tracking-widest">— RUMI</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Category Selectors (Chips) -->
+<section class="max-w-7xl mx-auto px-8 mb-16">
+<div class="flex flex-wrap gap-3 items-center">
+<span class="text-label text-sm font-semibold text-outline uppercase tracking-widest mr-4">Filter by</span>
+<button class="px-6 py-2 rounded-full bg-secondary-container text-on-secondary-container font-body font-medium transition-all hover:scale-[1.02]">All Insights</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container/50 transition-all hover:scale-[1.02]">Stress Management</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container/50 transition-all hover:scale-[1.02]">Relationships</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container/50 transition-all hover:scale-[1.02]">Mindfulness</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container/50 transition-all hover:scale-[1.02]">Burnout</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-secondary-container/50 transition-all hover:scale-[1.02]">Self-Compassion</button>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+<!-- Card 1 -->
+<article class="group">
+<div class="aspect-[16/10] mb-8 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Stones stacked in a calm balanced formation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZUvz0olb1OKr2Q8WeH9cgfb9EAmS-2AYtXOC7VAmhqfgnnyBcLFHcKMO_cvDOR1SxcAFEdoqBSlvaLz0w1J9t9PZHHDTNf5gV23QFPdSXDk0JaepmpmilZVV5YooP1uKlDV5CjjWt66U86G7mz6ttw497yseZ6x06L_uxod8WQW0w5lze0kEP6FShbu7kl1DqmQMhGr4qm7bIf3ik7Axib6hND2qpjgOA0Og9XyGA3U7IO7Ofh8Qb8P7F0ROn-KCp30RAO_lt18dO"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="text-label text-xs uppercase tracking-widest text-primary font-bold">Mindfulness</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-label text-xs text-outline">8 Min Read</span>
+</div>
+<h3 class="serif-display text-2xl text-on-surface leading-tight group-hover:text-primary transition-colors">Finding Stillness in the Middle of the Storm</h3>
+<p class="text-body text-on-surface-variant leading-relaxed">
+                            Exploring the neurological benefits of micro-meditations during high-stress workdays.
+                        </p>
+<a class="inline-block text-on-surface font-body font-semibold group-hover:text-primary pt-2" href="#">
+                            Read More
+                            <div class="h-[3.5px] w-full bg-primary-container mt-1 group-hover:bg-primary transition-colors"></div>
+</a>
+</div>
+</article>
+<!-- Card 2 (Elevated Variant) -->
+<article class="group lg:mt-12">
+<div class="aspect-[16/10] mb-8 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Warm sunlight through a soft linen curtain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8-7M6wAuE2aKLI4PcIZlYZ0GhV70dj7EaBePdgulTxIng9E8p-oAZInaEehnpkL61h0jy5snQGH5h2dP-GRwX2BMSVGpHRJxDU6rjhjl-H8XqzE2K2WUzKqArX7h23scDTAfKYhdAybla-hV6QRo23nYaxKvBpgq8k2z_CWwYrFiQjA9ewi2r9X-Pl8AeknU7JTrvIfGOJW8Ow0JNkF8DT6hgpNhe_dJCuGxldkIG_R835jHHOxBtcL424VfoEhVyBgxB38h0juFo"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="text-label text-xs uppercase tracking-widest text-primary font-bold">Relationships</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-label text-xs text-outline">12 Min Read</span>
+</div>
+<h3 class="serif-display text-2xl text-on-surface leading-tight group-hover:text-primary transition-colors">The Art of Vulnerability in Digital Spaces</h3>
+<p class="text-body text-on-surface-variant leading-relaxed">
+                            How social media alters our perception of emotional safety and authentic connection.
+                        </p>
+<a class="inline-block text-on-surface font-body font-semibold group-hover:text-primary pt-2" href="#">
+                            Read More
+                            <div class="h-[3.5px] w-full bg-primary-container mt-1 group-hover:bg-primary transition-colors"></div>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group">
+<div class="aspect-[16/10] mb-8 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Morning mist over a quiet valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg22J-tEX7iPBh-SzZIMtk5xReo2lE0RuTAeNQzErFNXmPA9DropSBjFq1WOl8No47X4ANN88rJdXU6EPLyM4yxYUNh27Yjxv-E6ukY8nJijkGFyCJV3CS_WXWriwGcoZ1dpUYBrZdfUHtH9YBgY9doCM2iePwWydC1JZGitC2oVgfO86YQKdVc8moeopyMxjQOIUYBHF0Wy3dYetH3cZI-J2TGLBwtpgrpMUDLDr-xwHuWfNe3SoXi6OmtQBdyopJ4gYb7jZgFZTB"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="text-label text-xs uppercase tracking-widest text-primary font-bold">Burnout</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-label text-xs text-outline">6 Min Read</span>
+</div>
+<h3 class="serif-display text-2xl text-on-surface leading-tight group-hover:text-primary transition-colors">Recovering Your Identity After Corporate Fatigue</h3>
+<p class="text-body text-on-surface-variant leading-relaxed">
+                            Steps to decoupling your self-worth from productivity and professional output.
+                        </p>
+<a class="inline-block text-on-surface font-body font-semibold group-hover:text-primary pt-2" href="#">
+                            Read More
+                            <div class="h-[3.5px] w-full bg-primary-container mt-1 group-hover:bg-primary transition-colors"></div>
+</a>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group">
+<div class="aspect-[16/10] mb-8 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Empty ceramic bowl on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6mHOvX83iBjVZCyZq4VM5lOjeoLmmwjtR6kOOy66DoHf4zt8hWZ34Yd5VOK6verZ6HNbonzW3ROkiZvbJze6opdv49XorJi7NQCUEUbH0LC9ZNv8x16_yNFxZvsh7F-fmKcQr5mCrGWr8qHEtJX4h-bEKdMweTw5EIvQgJmVIA0Fkk15LbyFs0qa2RzJZ2MDSDF9jvU9j8LLPTYzY_mBP0blqDXtzRNC5TZOluJ8eML_onHBXGTfHoSW-iAd4SUCMO4ANvBtE4ywD"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="text-label text-xs uppercase tracking-widest text-primary font-bold">Self-Compassion</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-label text-xs text-outline">10 Min Read</span>
+</div>
+<h3 class="serif-display text-2xl text-on-surface leading-tight group-hover:text-primary transition-colors">The Psychology of the 'Inner Critic'</h3>
+<p class="text-body text-on-surface-variant leading-relaxed">
+                            Understanding where our harshest internal voices come from and how to soften them.
+                        </p>
+<a class="inline-block text-on-surface font-body font-semibold group-hover:text-primary pt-2" href="#">
+                            Read More
+                            <div class="h-[3.5px] w-full bg-primary-container mt-1 group-hover:bg-primary transition-colors"></div>
+</a>
+</div>
+</article>
+<!-- Card 5 (Large Pull Quote/Bento Style) -->
+<div class="lg:col-span-1 bg-primary-container rounded-lg p-12 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">spa</span>
+<h2 class="serif-display text-3xl text-on-primary-container leading-tight mb-6">
+                        Healing is not linear, it's organic.
+                    </h2>
+<p class="text-body text-on-primary-container/80 mb-8">
+                        Join our newsletter for weekly reflections on mental well-being and growth.
+                    </p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-body font-medium hover:scale-105 transition-transform">
+                        Subscribe to Insights
+                    </button>
+</div>
+<!-- Card 6 -->
+<article class="group">
+<div class="aspect-[16/10] mb-8 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Person standing at the edge of a calm ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChieguWQqe0swcMkVIpfjWXsBCrBNLpBXYX1_E-09tdXxEWw4bhCYxrENw8x_DABOs4FCTLOTwU9djjV_VGT-EgStMNhKGrSgqPWT1Y-QZBDqKzOE65Iv4jqpo1k42DsBD3-n5oqz6dfRR4lF74nupYv8nCyeROTw8nLx0LNidTEdaLyJx-Uq5yAgZr9JbvN6-boLXiUmmvf0ZulsZoRG7f-c6lOQVreeMU8DnG4mPJoEuj3eApMFGOCwzly7QaR2Tr366qOqCw2cj"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="text-label text-xs uppercase tracking-widest text-primary font-bold">Anxiety</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-label text-xs text-outline">15 Min Read</span>
+</div>
+<h3 class="serif-display text-2xl text-on-surface leading-tight group-hover:text-primary transition-colors">Navigating Anxiety in a Post-Digital World</h3>
+<p class="text-body text-on-surface-variant leading-relaxed">
+                            Tools for grounding yourself when the global news cycle feels overwhelming.
+                        </p>
+<a class="inline-block text-on-surface font-body font-semibold group-hover:text-primary pt-2" href="#">
+                            Read More
+                            <div class="h-[3.5px] w-full bg-primary-container mt-1 group-hover:bg-primary transition-colors"></div>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Pagination (Minimalist) -->
+<div class="max-w-7xl mx-auto px-8 mt-24 flex justify-between items-center border-t border-outline-variant/20 pt-12">
+<button class="flex items-center gap-2 text-outline hover:text-primary transition-colors group">
+<span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="font-body font-medium">Newer Articles</span>
+</button>
+<div class="hidden md:flex gap-4">
+<span class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-on-primary font-body text-sm">1</span>
+<span class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors cursor-pointer font-body text-sm">2</span>
+<span class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors cursor-pointer font-body text-sm">3</span>
+</div>
+<button class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors group">
+<span class="font-body font-medium">Older Articles</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ed] dark:bg-stone-900">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<!-- Brand Section -->
+<div class="space-y-6">
+<div class="font-serif text-xl text-[#383833] dark:text-[#f6f3ed]">
+                    The Empathetic Editorial
+                </div>
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] leading-relaxed">
+                    A clinical practice dedicated to the intersection of psychology, resilience, and mindful living. Licensed Clinical Psychologist.
+                </p>
+</div>
+<!-- Links Section -->
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Company</span>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">Privacy Policy</a>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">Terms of Service</a>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">Credentials</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Connect</span>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">Contact</a>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">LinkedIn</a>
+<a class="text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors font-sans text-sm" href="#">Instagram</a>
+</div>
+</div>
+<!-- Newsletter Section -->
+<div class="space-y-6">
+<span class="text-primary font-bold text-xs uppercase tracking-widest">Office Location</span>
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2]">
+                    124 Sanctuary Path, Suite 200<br/>
+                    Greenwich, London, SE10 8BW
+                </p>
+<div class="pt-4">
+<p class="text-[#383833] dark:text-[#bbb9b2] font-sans text-sm mb-4">Subscribe to our weekly editorial.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-high rounded-md px-4 py-2 text-sm border-none focus:ring-1 focus:ring-primary w-full" placeholder="Email" type="email"/>
+<button class="material-symbols-outlined bg-primary text-on-primary p-2 rounded-md">arrow_forward</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-12 pb-12 max-w-7xl mx-auto border-t border-outline-variant/10 pt-8">
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] opacity-80">
+                © 2024 The Empathetic Editorial. All rights reserved. Licensed Clinical Psychologist.
+            </p>
+</div>
+</footer>
+</body></html>

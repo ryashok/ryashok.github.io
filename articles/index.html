@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://ryashok.github.io/articles/" />
     <meta property="og:title" content="Статьи — Владимир Ряхин" />
     <meta property="og:description" content="Статьи о психологии, страхах и способах их преодоления." />
-    <meta property="og:image" content="https://ryashok.github.io/assets/img/photo.png" />
+    <meta property="og:image" content="https://ryashok.github.io/assets/img/blog-illustration.jpg" />
     <meta property="og:locale" content="ru_RU" />
     <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
@@ -17,7 +17,7 @@
     <link rel="manifest" href="../favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="canonical" href="https://ryashok.github.io/articles/" />
   </head>
@@ -26,17 +26,21 @@
       <div class="container">
         <div class="header-brand">
           <a href="../index.html" class="header-photo" aria-label="На главную"><img src="../assets/img/photo.png" alt="" width="48" height="48" /></a>
-          <div class="logo"><a href="../index.html" class="logo-link logo-name">Владимир Ряхин</a></div>
+          <div class="header-brand-text">
+            <a href="../index.html" class="logo-link logo-name">Владимир Ряхин</a>
+            <span class="header-tagline">Статьи и материалы</span>
+          </div>
         </div>
         <nav class="main-nav">
           <a href="../index.html#services">Услуги</a>
           <a href="../index.html#method">Метод</a>
           <a href="../index.html#testimonials">Отзывы</a>
           <a href="../index.html#contact">Запись</a>
-          <a href="index.html">Статьи</a>
+          <a href="index.html" class="is-active">Статьи</a>
           <a href="../videos/">Видео</a>
         </nav>
-        <button class="nav-toggle" aria-label="Открыть меню">
+        <a class="btn primary header-cta" href="https://t.me/Ryashok?text=Здравствуйте%2C%20хочу%20записаться%20на%20консультацию" target="_blank" rel="noreferrer">Записаться</a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню">
           <span></span>
           <span></span>
           <span></span>
@@ -44,55 +48,182 @@
       </div>
     </header>
 
-    <main>
-      <section class="section">
+    <main class="blog-main">
+      <header class="blog-hero" aria-labelledby="blog-heading">
         <div class="container">
-          <p class="eyebrow">Блог</p>
-          <h2>Статьи</h2>
-          <p class="lead">О психологии, страхах и способах вернуть себе спокойствие и контроль.</p>
-          <div class="articles-grid">
-            <article class="article-card">
-              <img class="article-card__image" src="../assets/img/article-prirodastraha.png" alt="Что такое страх: природа, причины и пути преодоления" loading="lazy" />
+          <div class="blog-hero__grid">
+            <div>
+              <p class="eyebrow">Блог</p>
+              <h1 id="blog-heading" class="blog-hero__title">Заметки о <em>внутреннем мире</em></h1>
+              <p class="blog-hero__lead">
+                Тексты о психологии, страхах и том, как вернуть себе спокойствие и опору — без лишнего шума и «ковыряния ран».
+              </p>
+              <label class="blog-search" for="blog-search-input">
+                <span class="blog-search__icon" aria-hidden="true"></span>
+                <input id="blog-search-input" type="search" placeholder="Поиск по заголовку…" autocomplete="off" />
+              </label>
+            </div>
+            <div class="blog-hero__visual">
+              <div class="blog-hero__figure">
+                <img src="../assets/img/blog-illustration.jpg" alt="Иллюстрация к разделу статей" width="1200" height="800" loading="eager" />
+              </div>
+              <aside class="blog-quote-float">
+                <p>«Там, где рана, — туда и приходит свет.»</p>
+                <cite>Руми</cite>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="blog-chips" aria-label="Фильтр по темам">
+        <div class="container">
+          <div class="blog-chips__row">
+            <span class="blog-chips__label">Темы</span>
+            <button type="button" class="chip-filter is-active" data-blog-filter="all">Все материалы</button>
+            <button type="button" class="chip-filter" data-blog-filter="strah">Страх</button>
+            <button type="button" class="chip-filter" data-blog-filter="dengi">Деньги</button>
+            <button type="button" class="chip-filter" data-blog-filter="panika">Паника</button>
+            <button type="button" class="chip-filter" data-blog-filter="obida">Обида</button>
+            <button type="button" class="chip-filter" data-blog-filter="agressia">Агрессия</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Список статей">
+        <div class="container">
+          <div class="articles-grid articles-grid--blog" id="blog-articles-grid">
+            <article
+              class="article-card article-card--blog"
+              data-blog-card
+              data-blog-title="Что такое страх: природа, причины и пути преодоления"
+              data-blog-tags="strah"
+            >
+              <div class="article-card__media">
+                <img class="article-card__image" src="../assets/img/article-prirodastraha.png" alt="Иллюстрация к статье о природе страха" loading="lazy" />
+              </div>
               <div class="article-card__body">
-                <h3 class="article-card__title">Что такое страх: природа, причины и пути преодоления</h3>
-                <div class="article-card__cta">
-                  <a href="prirodastraha.html" class="btn primary">Прочитать</a>
+                <div class="article-card__meta">
+                  <span class="article-card__tag">Страх</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <span class="article-card__read-time">~12 мин</span>
                 </div>
+                <h2 class="article-card__title">Что такое страх: природа, причины и пути преодоления</h2>
+                <p class="article-card__excerpt">О природе страха, защитных реакциях и о том, как мягко вернуть себе чувство безопасности.</p>
+                <a class="article-card__link-read" href="prirodastraha.html">
+                  Читать далее
+                  <span class="article-card__link-bar" aria-hidden="true"></span>
+                </a>
               </div>
             </article>
-            <article class="article-card">
-              <img class="article-card__image" src="../assets/img/article-strahdeneg.png" alt="Страхи или деньги? Как страхи управляют нашими деньгами" loading="lazy" />
+
+            <article
+              class="article-card article-card--blog"
+              data-blog-card
+              data-blog-title="Страхи или деньги? Как страхи управляют нашими деньгами"
+              data-blog-tags="dengi"
+            >
+              <div class="article-card__media">
+                <img class="article-card__image" src="../assets/img/article-strahdeneg.png" alt="Иллюстрация к статье о страхе и деньгах" loading="lazy" />
+              </div>
               <div class="article-card__body">
-                <h3 class="article-card__title">Страхи или деньги? Как страхи управляют нашими деньгами</h3>
-                <div class="article-card__cta">
-                  <a href="strahdeneg.html" class="btn primary">Прочитать</a>
+                <div class="article-card__meta">
+                  <span class="article-card__tag">Деньги</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <span class="article-card__read-time">~10 мин</span>
                 </div>
+                <h2 class="article-card__title">Страхи или деньги? Как страхи управляют нашими деньгами</h2>
+                <p class="article-card__excerpt">Как тревога и установки влияют на решения о деньгах и самооценку.</p>
+                <a class="article-card__link-read" href="strahdeneg.html">
+                  Читать далее
+                  <span class="article-card__link-bar" aria-hidden="true"></span>
+                </a>
               </div>
             </article>
-            <article class="article-card">
-              <img class="article-card__image" src="../assets/img/article-panicattack.jpg" alt="Паническая атака — наше проклятие или спасение?" loading="lazy" />
+
+            <article
+              class="article-card article-card--blog"
+              data-blog-card
+              data-blog-title="Паническая атака — наше проклятие или спасение?"
+              data-blog-tags="panika strah"
+            >
+              <div class="article-card__media">
+                <img class="article-card__image" src="../assets/img/article-panicattack.jpg" alt="Иллюстрация к статье о панических атаках" loading="lazy" />
+              </div>
               <div class="article-card__body">
-                <h3 class="article-card__title">Паническая атака — наше проклятие или спасение?</h3>
-                <div class="article-card__cta">
-                  <a href="panicataki.html" class="btn primary">Прочитать</a>
+                <div class="article-card__meta">
+                  <span class="article-card__tag">Паника</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <span class="article-card__read-time">~8 мин</span>
                 </div>
+                <h2 class="article-card__title">Паническая атака — наше проклятие или спасение?</h2>
+                <p class="article-card__excerpt">Паника как сигнал нервной системы и как относиться к ней бережнее.</p>
+                <a class="article-card__link-read" href="panicataki.html">
+                  Читать далее
+                  <span class="article-card__link-bar" aria-hidden="true"></span>
+                </a>
               </div>
             </article>
-            <article class="article-card">
-              <img class="article-card__image" src="../assets/img/article-obida.png" alt="Обида: инструкция по выживанию" loading="lazy" />
+
+            <article
+              class="article-card article-card--blog"
+              data-blog-card
+              data-blog-title="Обида: инструкция по выживанию"
+              data-blog-tags="obida"
+            >
+              <div class="article-card__media">
+                <img class="article-card__image" src="../assets/img/article-obida.png" alt="Иллюстрация к статье об обиде" loading="lazy" />
+              </div>
               <div class="article-card__body">
-                <h3 class="article-card__title">Обида: инструкция по выживанию</h3>
-                <div class="article-card__cta">
-                  <a href="obida.html" class="btn primary">Прочитать</a>
+                <div class="article-card__meta">
+                  <span class="article-card__tag">Обида</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <span class="article-card__read-time">~11 мин</span>
                 </div>
+                <h2 class="article-card__title">Обида: инструкция по выживанию</h2>
+                <p class="article-card__excerpt">Обида как эмоция и как не застревать в ней надолго.</p>
+                <a class="article-card__link-read" href="obida.html">
+                  Читать далее
+                  <span class="article-card__link-bar" aria-hidden="true"></span>
+                </a>
+              </div>
+            </article>
+
+            <article
+              class="article-card article-card--blog"
+              data-blog-card
+              data-blog-title="Агрессия под контролем: как превратить разрушительную энергию в силу"
+              data-blog-tags="agressia"
+            >
+              <div class="article-card__media">
+                <img class="article-card__image" src="../assets/img/article-agressia.png" alt="Иллюстрация к статье об агрессии" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <div class="article-card__meta">
+                  <span class="article-card__tag">Агрессия</span>
+                  <span class="article-card__dot" aria-hidden="true"></span>
+                  <span class="article-card__read-time">~12 мин</span>
+                </div>
+                <h2 class="article-card__title">Агрессия под контролем: как превратить разрушительную энергию в силу</h2>
+                <p class="article-card__excerpt">Агрессия как сигнал, а не враг: подавление, выплеск, телу выход и здоровые границы.</p>
+                <a class="article-card__link-read" href="agressia.html">
+                  Читать далее
+                  <span class="article-card__link-bar" aria-hidden="true"></span>
+                </a>
               </div>
             </article>
           </div>
+
+          <aside class="blog-subscribe">
+            <h2>Канал «Спокойствие»</h2>
+            <p>Короткие материалы и практики в Telegram — без суеты, в том же бережном тоне.</p>
+            <a class="btn primary" href="https://t.me/ryashokhipnoterapevt" target="_blank" rel="noreferrer">Перейти в канал</a>
+          </aside>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer site-footer--compact">
       <div class="container">
         <p>© 2025 Владимир Ряхин. Все права защищены.</p>
         <div class="footer-links">
@@ -105,5 +236,42 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script>
+      (function () {
+        var input = document.getElementById('blog-search-input');
+        var cards = document.querySelectorAll('[data-blog-card]');
+        var chips = document.querySelectorAll('[data-blog-filter]');
+
+        function applyFilters() {
+          var q = (input && input.value ? input.value : '').trim().toLowerCase();
+          var active = document.querySelector('[data-blog-filter].is-active');
+          var filter = active ? active.getAttribute('data-blog-filter') : 'all';
+
+          cards.forEach(function (card) {
+            var title = (card.getAttribute('data-blog-title') || '').toLowerCase();
+            var tags = (card.getAttribute('data-blog-tags') || '').split(/\s+/).filter(Boolean);
+            var tagOk =
+              filter === 'all' ||
+              tags.indexOf(filter) !== -1;
+            var searchOk =
+              !q ||
+              title.indexOf(q) !== -1 ||
+              card.textContent.toLowerCase().indexOf(q) !== -1;
+            card.classList.toggle('is-hidden', !(tagOk && searchOk));
+          });
+        }
+
+        if (input) input.addEventListener('input', applyFilters);
+        chips.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            chips.forEach(function (b) {
+              b.classList.remove('is-active');
+            });
+            btn.classList.add('is-active');
+            applyFilters();
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#eae8e0",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary": "#556959",
+              "on-primary-fixed": "#2f4434",
+              "on-secondary-container": "#435647",
+              "on-surface-variant": "#65655e",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#d2e8d3",
+              "on-primary-fixed-variant": "#4b614f",
+              "inverse-primary": "#e4fde6",
+              "primary-fixed": "#d1e9d3",
+              "inverse-surface": "#0e0e0c",
+              "outline": "#81817a",
+              "on-surface": "#383833",
+              "on-secondary-fixed-variant": "#4d6050",
+              "surface-bright": "#fffcf7",
+              "on-tertiary-fixed-variant": "#5b6836",
+              "tertiary-dim": "#515d2d",
+              "surface-container-low": "#fcf9f3",
+              "primary": "#546a58",
+              "tertiary-container": "#e6f5b6",
+              "error-dim": "#67040d",
+              "surface-container": "#f6f3ed",
+              "tertiary": "#5d6938",
+              "inverse-on-surface": "#9e9d98",
+              "on-error-container": "#6e0a12",
+              "on-tertiary-container": "#515d2d",
+              "tertiary-fixed-dim": "#d8e6a9",
+              "outline-variant": "#bbb9b2",
+              "background": "#fffcf7",
+              "on-secondary-fixed": "#314435",
+              "on-primary-container": "#425746",
+              "tertiary-fixed": "#e6f5b6",
+              "on-background": "#383833",
+              "surface-variant": "#eae8e0",
+              "error-container": "#fa746f",
+              "surface-tint": "#546a58",
+              "surface-container-high": "#f0eee6",
+              "secondary-fixed-dim": "#c4dac6",
+              "primary-dim": "#485d4c",
+              "error": "#af3d3b",
+              "primary-container": "#d1e9d3",
+              "surface-dim": "#e4e3da",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "secondary-dim": "#495d4d",
+              "secondary-container": "#d2e8d3",
+              "surface": "#fffcf7",
+              "on-tertiary-fixed": "#3f4b1d",
+              "primary-fixed-dim": "#c3dbc5"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf7]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(56,56,51,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="font-serif italic text-2xl text-[#383833] dark:text-[#f6f3ed]">
+                The Empathetic Editorial
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#383833] dark:text-[#eae8e0] opacity-80 font-serif text-lg tracking-tight hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">About</a>
+<a class="text-[#546a58] dark:text-[#8CA38F] font-semibold border-b-2 border-[#d1e9d3] pb-1 font-serif text-lg tracking-tight hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Services</a>
+<a class="text-[#383833] dark:text-[#eae8e0] opacity-80 font-serif text-lg tracking-tight hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Blog</a>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label text-sm font-semibold hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                    Book a Consultation
+                </button>
+</div>
+<!-- Mobile Menu Toggle (Simplified) -->
+<div class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 mb-24 text-center">
+<span class="text-primary font-label tracking-[0.2em] uppercase text-xs font-bold mb-4 block">Therapeutic Services</span>
+<h1 class="text-5xl md:text-7xl font-headline tracking-tight text-on-surface mb-8">Guided pathways to <br/><span class="italic">emotional resilience.</span></h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant text-lg font-body leading-relaxed">
+                Choosing the right format for your healing journey is the first step toward lasting change. We offer focused sessions designed to meet you exactly where you are.
+            </p>
+</header>
+<!-- Services Bento Grid -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Individual Therapy Card -->
+<div class="md:col-span-8 group bg-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[450px] transition-all duration-500 hover:bg-surface-container-lowest hover:shadow-[0px_20px_40px_rgba(56,56,51,0.05)] border border-outline-variant/10">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="w-full md:w-1/2 aspect-[4/5] rounded-lg overflow-hidden relative">
+<img alt="Peaceful interior space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Calm minimal therapy room with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUyY5e6UxzYKrhhG9D6BY7FvYVixG70X2_xHvS1goLKdg3vubGlSrTwssF8Gvql3mKdVdYGQHcB8vudWan-Zm1SqBLtWwEkkMtj0b9Iv-fqjvdI6mpgMs6gYHn_bot4E5FMqVfOU9W9ttHKhD8LhbFde99nVevrSXmCE-ExNYcm4hl-A5jUPg1qJxVnVdy9BUnmkG8WCFzJa8ZtJAO3Yv_GLkCIWEvDoo5HWG_ImqWgclGCrMDkeErxaZYSYe_GiDkpgTYqNpER04F"/>
+<div class="absolute top-6 left-6 bg-surface/90 backdrop-blur px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="font-label text-xs font-semibold uppercase tracking-wider">50 mins</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<h2 class="text-3xl font-headline mb-4">Individual Therapy</h2>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">
+                                A dedicated space for personal exploration. We work one-on-one to uncover patterns, manage anxiety, and foster self-compassion through a trauma-informed lens.
+                            </p>
+<div class="mb-8">
+<div class="text-sm font-label text-primary font-bold uppercase tracking-widest mb-1">Fee</div>
+<div class="text-4xl font-headline text-on-surface">$175 <span class="text-base font-body text-on-surface-variant font-normal">/ session</span></div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label text-sm font-bold flex items-center gap-3 hover:scale-[1.02] active:scale-95 transition-all">
+                            Book Individual Session
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Family Therapy Card (Vertical) -->
+<div class="md:col-span-4 bg-primary-container rounded-xl p-10 flex flex-col justify-between transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(56,56,51,0.05)]">
+<div>
+<div class="bg-on-primary-container/10 w-14 h-14 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">groups</span>
+</div>
+<h2 class="text-3xl font-headline mb-4 text-on-primary-container leading-tight">Family Therapy</h2>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-on-primary-container/70 text-sm">schedule</span>
+<span class="font-label text-xs font-semibold uppercase tracking-wider text-on-primary-container/70">90 mins</span>
+</div>
+<p class="text-on-primary-container/80 font-body mb-8 leading-relaxed">
+                            Restructuring communication and healing generational wounds. Designed for deeper breakthroughs in interpersonal dynamics.
+                        </p>
+</div>
+<div>
+<div class="mb-8 border-t border-on-primary-container/10 pt-8">
+<div class="text-sm font-label text-on-primary-container font-bold uppercase tracking-widest mb-1">Fee</div>
+<div class="text-4xl font-headline text-on-primary-container">$250 <span class="text-base font-body opacity-70 font-normal">/ session</span></div>
+</div>
+<button class="w-full bg-on-primary-container text-surface-container-lowest px-8 py-4 rounded-full font-label text-sm font-bold hover:scale-[1.02] active:scale-95 transition-all">
+                            Schedule Family Session
+                        </button>
+</div>
+</div>
+<!-- Online Consultation Card (Horizontal) -->
+<div class="md:col-span-12 bg-surface-container-high rounded-xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 transition-all duration-500 hover:bg-surface-container-highest">
+<div class="w-full md:w-1/3">
+<div class="relative">
+<img alt="Therapist on a video call" class="rounded-lg shadow-xl" data-alt="Close up of a laptop showing a friendly professional in a video call" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA_dYW5x_KiAfrjPcYdTfm8i44FneVID1yJJNiD529gcowT4i7sqWQZB_N7QcgZFSUZf94HlMcZehrPfH7ohuJk6Q5tY4c4cBESU6oqC3aS0YHKRMxB3WExK9dQvkfBl9Be74xdnc_QoYn6-0u8YpoEkuCX13EQxkHt8Efqtf0HBw32OniSI-cU615ZyA4PaMNE6vqDWt_KdWiFvjnzl0anmWZZpy2f9ZXZ20j2asG3Wu43RGtvoOsXmD_p5wreFHAboLdCk1f-94J"/>
+<div class="absolute -bottom-4 -right-4 bg-tertiary-container text-on-tertiary-container p-4 rounded-lg shadow-lg">
+<span class="material-symbols-outlined text-2xl">video_chat</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center gap-4 mb-6">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-xs font-bold font-label text-primary uppercase tracking-tighter">Remote Access</span>
+<span class="h-px w-12 bg-outline-variant/30"></span>
+<span class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Global Availability</span>
+</div>
+<h2 class="text-4xl font-headline mb-6">Online Consultation</h2>
+<p class="text-on-surface-variant font-body text-lg mb-8 max-w-xl leading-relaxed">
+                            High-quality therapeutic care from the comfort of your sanctuary. Secure, HIPAA-compliant video sessions that respect your time and privacy.
+                        </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-10">
+<div>
+<div class="text-sm font-label text-primary font-bold uppercase tracking-widest mb-1">Fee</div>
+<div class="text-4xl font-headline text-on-surface">$150 <span class="text-base font-body text-on-surface-variant font-normal">/ session</span></div>
+</div>
+<button class="bg-on-surface text-surface py-4 px-10 rounded-full font-label text-sm font-bold flex items-center gap-3 hover:opacity-90 active:scale-95 transition-all">
+                                Request Online Session
+                                <span class="material-symbols-outlined text-lg">public</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Pause Card -->
+<section class="max-w-4xl mx-auto px-8 mt-32">
+<div class="bg-gradient-to-br from-primary-container to-surface p-16 rounded-xl text-center border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">spa</span>
+<p class="text-2xl font-headline italic text-on-primary-container leading-relaxed mb-8">
+                    "Healing is not a linear process, but a series of quiet returns to oneself."
+                </p>
+<div class="w-20 h-px bg-primary/20 mx-auto"></div>
+</div>
+</section>
+<!-- Credentials/Insurance Micro-section -->
+<section class="max-w-7xl mx-auto px-8 mt-24">
+<div class="bg-surface-container-low rounded-lg p-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h3 class="text-xl font-headline mb-2">Insurance &amp; Sliding Scale</h3>
+<p class="text-on-surface-variant font-body text-sm max-w-md">
+                        We are currently out-of-network for most providers but provide superbills for reimbursement. A limited number of sliding scale spots are available for those in financial transition.
+                    </p>
+</div>
+<div class="flex gap-8 items-center opacity-60">
+<span class="font-label text-xs font-bold tracking-widest uppercase">Member of:</span>
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+<span class="material-symbols-outlined text-3xl">psychology</span>
+<span class="material-symbols-outlined text-3xl">health_and_safety</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ed] dark:bg-stone-900">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl text-[#383833] dark:text-[#f6f3ed]">
+                    The Empathetic Editorial
+                </div>
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] leading-relaxed">
+                    A boutique psychology practice dedicated to the intersection of clinical excellence and soulful living.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.2em] text-[#546a58] mb-2">Practice</h4>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">Credentials</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.2em] text-[#546a58] mb-2">Connect</h4>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] dark:hover:text-[#8CA38F] transition-colors opacity-80 hover:opacity-100" href="#">Instagram</a>
+</div>
+<div class="md:col-span-3 pt-12 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] opacity-80">
+                    © 2024 The Empathetic Editorial. All rights reserved. Licensed Clinical Psychologist.
+                </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#546a58] opacity-50">eco</span>
+<span class="material-symbols-outlined text-[#546a58] opacity-50">self_care</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

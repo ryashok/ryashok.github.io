@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Me | The Empathetic Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#eae8e0",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary": "#556959",
+              "on-primary-fixed": "#2f4434",
+              "on-secondary-container": "#435647",
+              "on-surface-variant": "#65655e",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#d2e8d3",
+              "on-primary-fixed-variant": "#4b614f",
+              "inverse-primary": "#e4fde6",
+              "primary-fixed": "#d1e9d3",
+              "inverse-surface": "#0e0e0c",
+              "outline": "#81817a",
+              "on-surface": "#383833",
+              "on-secondary-fixed-variant": "#4d6050",
+              "surface-bright": "#fffcf7",
+              "on-tertiary-fixed-variant": "#5b6836",
+              "tertiary-dim": "#515d2d",
+              "surface-container-low": "#fcf9f3",
+              "primary": "#546a58",
+              "tertiary-container": "#e6f5b6",
+              "error-dim": "#67040d",
+              "surface-container": "#f6f3ed",
+              "tertiary": "#5d6938",
+              "inverse-on-surface": "#9e9d98",
+              "on-error-container": "#6e0a12",
+              "on-tertiary-container": "#515d2d",
+              "tertiary-fixed-dim": "#d8e6a9",
+              "outline-variant": "#bbb9b2",
+              "background": "#fffcf7",
+              "on-secondary-fixed": "#314435",
+              "on-primary-container": "#425746",
+              "tertiary-fixed": "#e6f5b6",
+              "on-background": "#383833",
+              "surface-variant": "#eae8e0",
+              "error-container": "#fa746f",
+              "surface-tint": "#546a58",
+              "surface-container-high": "#f0eee6",
+              "secondary-fixed-dim": "#c4dac6",
+              "primary-dim": "#485d4c",
+              "error": "#af3d3b",
+              "primary-container": "#d1e9d3",
+              "surface-dim": "#e4e3da",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "secondary-dim": "#495d4d",
+              "secondary-container": "#d2e8d3",
+              "surface": "#fffcf7",
+              "on-tertiary-fixed": "#3f4b1d",
+              "primary-fixed-dim": "#c3dbc5"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fffcf7;
+            color: #383833;
+        }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fffcf7]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-[0px_20px_40px_rgba(56,56,51,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<a class="font-serif italic text-2xl text-[#383833] dark:text-[#f6f3ed]" href="#">The Empathetic Editorial</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-serif text-lg tracking-tight text-[#546a58] dark:text-[#8CA38F] font-semibold border-b-2 border-[#d1e9d3] pb-1 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">About</a>
+<a class="font-serif text-lg tracking-tight text-[#383833] dark:text-[#eae8e0] opacity-80 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Services</a>
+<a class="font-serif text-lg tracking-tight text-[#383833] dark:text-[#eae8e0] opacity-80 hover:opacity-100 hover:scale-[1.02] transition-all duration-300" href="#">Blog</a>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-medium hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                    Book a Consultation
+                </button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section: The Human Connection -->
+<section class="max-w-7xl mx-auto px-8 mb-24 lg:mb-40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container relative z-10">
+<img alt="Portrait of the psychologist" class="w-full h-full object-cover grayscale-[20%] contrast-[1.05]" data-alt="Professional friendly portrait of a female psychologist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqk6oMNuhOM1dJpf_7_Lvllon2PD-BBOynLTVlZV1EOehSxGnK9J7Je04qukWqwyI_al4uBLDIJZvEISJBSfR_ZAIDDPvMjIfRW1lsMBznvyp96aZSzm-62uc1TCLWvls32S5DLeEHJSumainDchOJXPdX5lfbgmla3Zlx-s0w1s136jqaTTwsmQugwM44zAGWWmdihvBxaLMgZhEo3zbaY0k-Q_kyBWHSaHd8AfTFaY0J8W0GxghMEL98pLSctu-o4CdvRfcrWl6d"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-primary-container rounded-xl -z-10 opacity-40"></div>
+</div>
+<div class="lg:col-span-7 lg:pl-12">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Meet Your Guide</span>
+<h1 class="font-serif text-5xl lg:text-7xl text-on-surface leading-tight mb-8">Dr. Elena Thorne, <span class="italic text-primary-dim">PhD</span></h1>
+<p class="font-serif text-2xl text-on-surface-variant leading-relaxed italic mb-8">
+                        "Healing is not a linear path, but an unfolding of one's truest self in a space of radical safety."
+                    </p>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed max-w-2xl">
+<p>With over fifteen years of clinical experience, my work is centered on the belief that every individual possesses an innate capacity for resilience. My role is to provide the architectural support for that resilience to flourish.</p>
+<p>I specialize in navigating complex life transitions, anxiety, and the integration of trauma. My approach is deeply editorial—we look at the narrative of your life, keeping what serves you and gently rewriting the chapters that no longer do.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The "Pause" Card: Philosophy -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="bg-gradient-to-br from-primary-container/40 to-surface rounded-xl p-12 lg:p-24 text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-primary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">spa</span>
+<h2 class="font-serif text-3xl lg:text-4xl text-on-surface mb-8">The Philosophy of Resilient Sanctuary</h2>
+<p class="text-xl text-on-secondary-container leading-loose">
+                        In a world that demands constant performance, therapy should be the one place where you are not a 'project' to be fixed. I treat our sessions as a sanctuary—a quiet, intentional space where we observe your internal landscape without judgment. We don't just solve problems; we cultivate a different way of being in the world.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Credentials & Experience -->
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<h2 class="font-serif text-4xl text-on-surface mb-16 text-center">Foundations &amp; Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Education Card -->
+<div class="md:col-span-2 bg-surface-container-low rounded-lg p-10 flex flex-col justify-between hover:shadow-sm transition-shadow">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">school</span>
+<h3 class="font-serif text-2xl">Academic Pedigree</h3>
+</div>
+<ul class="space-y-6">
+<li class="flex justify-between items-start border-b border-outline-variant/20 pb-4">
+<div>
+<p class="font-bold text-on-surface">PhD in Clinical Psychology</p>
+<p class="text-on-surface-variant">Columbia University</p>
+</div>
+<span class="text-sm font-label text-outline">2012</span>
+</li>
+<li class="flex justify-between items-start border-b border-outline-variant/20 pb-4">
+<div>
+<p class="font-bold text-on-surface">MA in Counseling Psychology</p>
+<p class="text-on-surface-variant">Northwestern University</p>
+</div>
+<span class="text-sm font-label text-outline">2008</span>
+</li>
+<li class="flex justify-between items-start pb-4">
+<div>
+<p class="font-bold text-on-surface">BA in Behavioral Science</p>
+<p class="text-on-surface-variant">University of Pennsylvania</p>
+</div>
+<span class="text-sm font-label text-outline">2006</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Certifications Card -->
+<div class="bg-surface-container-high rounded-lg p-10 flex flex-col border border-primary-container/20">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<h3 class="font-serif text-2xl">Board Certifications</h3>
+</div>
+<div class="space-y-6 flex-grow">
+<div class="p-4 bg-surface-container-lowest rounded-md">
+<p class="font-bold text-sm uppercase tracking-wider text-primary mb-1">CBT Specialist</p>
+<p class="text-on-surface-variant text-sm">Academy of Cognitive Therapy</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-md">
+<p class="font-bold text-sm uppercase tracking-wider text-primary mb-1">Trauma Informed</p>
+<p class="text-on-surface-variant text-sm">EMDR International Association</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-md">
+<p class="font-bold text-sm uppercase tracking-wider text-primary mb-1">Mindfulness Coach</p>
+<p class="text-on-surface-variant text-sm">Oxford Mindfulness Centre</p>
+</div>
+</div>
+</div>
+<!-- Approach Card -->
+<div class="md:col-span-3 bg-surface-container rounded-lg p-10 lg:p-16 overflow-hidden relative">
+<div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div>
+<h3 class="font-serif text-3xl mb-6">A Hybrid Approach</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                                I don't believe in a one-size-fits-all methodology. Instead, I blend evidence-based clinical practices with holistic mindfulness to address both the mind and the nervous system.
+                            </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-medium">Psychodynamic</span>
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-medium">Cognitive Behavioral</span>
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-medium">Somatic Experiencing</span>
+<span class="px-6 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-medium">Narrative Therapy</span>
+</div>
+</div>
+<div class="hidden md:block">
+<img alt="Therapeutic environment" class="rounded-lg shadow-xl rotate-3" data-alt="Blurred background of a calm modern therapeutic office with plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5WQlVh9pAT3gqEIY7gYwA2sgrd7pYO0sxAS_I-wl9_3470aY_y391blogj8_Z1YDcORDfysFX0AEyliXlkUWU-AKaHUW_oAZvWPgNBWEuTCNgK6KRgs12dAlaA4puzP_IxVMV7k0O_15AjGIFPAxy_qhBDoQbKlz87QqpTkK-lFOJV8OodoYhc_MVa5-pvrlba_TYJJU7xJS5O8hIHiFpRr-D2zoWuRKLOCaycIIJ8uUa4phC8aC2X53Lw0aX3jIjMJ-8aMfl5OV"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-5xl mx-auto px-8 text-center pb-20">
+<h3 class="font-serif text-3xl mb-6">Ready to begin your narrative?</h3>
+<p class="text-on-surface-variant text-lg mb-10 max-w-xl mx-auto">I offer a complimentary 20-minute consultation to ensure our dynamic is the right fit for your journey.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-medium text-lg hover:scale-[1.02] active:scale-95 transition-all w-full sm:w-auto">
+                    Schedule Consultation
+                </button>
+<a class="text-on-surface font-medium hover:text-primary transition-colors flex items-center gap-2 px-6 py-4" href="#">
+                    View FAQ <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3ed] dark:bg-stone-900 w-full rounded-t-[3rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="font-serif text-xl text-[#383833] dark:text-[#f6f3ed]">The Empathetic Editorial</span>
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] leading-relaxed">
+                    Bridging the gap between clinical excellence and soulful well-being through intentional, personalized psychological care.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors" href="#">Terms of Service</a>
+<a class="font-sans text-sm tracking-wide text-[#546a58] underline decoration-[#d1e9d3] underline-offset-4" href="#">Credentials</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors" href="#">Contact</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors" href="#">LinkedIn</a>
+<a class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] hover:text-[#546a58] transition-colors" href="#">Instagram</a>
+</div>
+</div>
+<div class="flex flex-col justify-end text-right md:text-left">
+<p class="font-sans text-sm tracking-wide text-[#383833] dark:text-[#bbb9b2] opacity-80">
+                    © 2024 The Empathetic Editorial. All rights reserved. Licensed Clinical Psychologist.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
