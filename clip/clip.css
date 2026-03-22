@@ -13,7 +13,10 @@
   justify-content: space-between;
   padding: 1rem 1.25rem;
   flex-shrink: 0;
-  background: rgba(246, 245, 241, 0.95);
+  /* Токен --surface из styles.css меняется в тёмной теме; не фиксировать светлый rgba — иначе перебивает prefers-color-scheme */
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 

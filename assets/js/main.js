@@ -34,9 +34,11 @@ if (form) {
       alert('Пожалуйста, заполните все обязательные поля.');
       return;
     }
+    const channelLabel =
+      channel === 'telegram' ? 'Telegram' : channel === 'max' ? 'MAX' : channel === 'email' ? 'Email' : channel;
     const subject = encodeURIComponent('Запись на консультацию — ' + name);
     const body = encodeURIComponent(
-      'Имя: ' + name + '\nEmail: ' + email + '\nУдобнее связаться: ' + channel + '\n\nСообщение:\n' + message
+      'Имя: ' + name + '\nEmail: ' + email + '\nУдобнее связаться: ' + channelLabel + '\n\nСообщение:\n' + message
     );
     window.location.href = 'mailto:ryashok@gmail.com?subject=' + subject + '&body=' + body;
   });
