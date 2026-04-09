@@ -20,9 +20,15 @@
   </url>
   <url>
     <loc>https://ryashok.github.io/articles/</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ryashok.github.io/articles/prednaznachenie.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ryashok.github.io/articles/prirodastraha.html</loc>
