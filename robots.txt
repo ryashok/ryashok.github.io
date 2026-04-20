@@ -11,6 +11,9 @@ User-agent: *
 # Услуги и контакты — якоря на главной (#services, #contact), не отдельные URL.
 Allow: /
 
+# Content Signals (AI preferences)
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
 # Разрешить индексацию изображений (фото, отзывы) для поиска по картинкам.
 Allow: /assets/img/
 # Запретить JS и CSS — не контент для поиска.
